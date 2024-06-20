@@ -21,8 +21,11 @@ void print_big_decimal(s21_big_decimal x) {
 }
 
 int get_binary(unsigned int x, int i) {
-  if ((x >> i) & 1) return 1;
-  return 0;
+    if (x & (1 << i)) {
+    return 1;
+  } else {
+    return 0;
+  }
 }
 
 void change_to_one(unsigned int *res, int i) { *res |= (1 << i); }
