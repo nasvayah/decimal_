@@ -22,7 +22,7 @@ int set_pow(s21_decimal *dst, int value);
 int s21_mod(s21_decimal value_1, s21_decimal value_2, s21_decimal *result);
 void print_binary(int x);
 void print_decimal(s21_decimal x);
-int get_binary(unsigned int x, int i);
+int get_binary(unsigned int x, unsigned int i);
 void change_to_one(unsigned int *res, int i);
 void change_to_zero(unsigned int *res, int i);
 int sum_binary(int x, int y);

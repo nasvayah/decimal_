@@ -20,12 +20,15 @@ void print_big_decimal(s21_big_decimal x) {
   printf("\n");
 }
 
-int get_binary(unsigned int x, int i) {
+int get_binary(unsigned int x, unsigned int i) {
+  if (i<32) return -1;
     if (x & (1 << i)) {
     return 1;
   } else {
     return 0;
   }
+  
+  return 0;
 }
 
 void change_to_one(unsigned int *res, int i) { *res |= (1 << i); }
